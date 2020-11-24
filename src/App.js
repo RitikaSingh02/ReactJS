@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import Car from "./New.js";
+import {New} from "./New";
+import A from "./CompA.js";
+import  { Provider } from "./useContext.js"
+import Postlist from "./Postlist"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Car/>
+      <Postlist value="none"/>
+      <New/>
+      <Provider value="ritika" >
+        <A/>
+      </Provider>
     </div>
   );
 }
