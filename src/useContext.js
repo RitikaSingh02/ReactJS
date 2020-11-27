@@ -7,6 +7,13 @@ const Provider=usercontext.Provider;
  
 const Consumer=usercontext.Consumer;
 
+const usercontext1=React.createContext();
+const Provider1=usercontext1.Provider;
+const Consumer1=usercontext1.Consumer;
+
+export {Provider1,Consumer1};
+export { usercontext1};
+
 export {Provider,Consumer} ;
 
 export default usercontext;

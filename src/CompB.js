@@ -1,5 +1,5 @@
-import	React from 'react'	
-import { Consumer } from './useContext'
+import	React from 'react'	;
+import { Consumer,Consumer1 } from './useContext'
 //context type can not be used with functional components
 function B(){	
     return (
@@ -13,14 +13,20 @@ function B(){
                 <p>hey this is {value} !</p>
                 )
             }
-            // value1=>{
-            //     console.log("yes");
-            //     return (
-            //     <p>hey this is {value1} !</p>
-            //     )
-            // }
+
             }
-        </Consumer>         
+        </Consumer>      
+        <Consumer1>{
+            
+            value=>{
+                console.log("yes")
+                return (
+                <p>hey this is {value} !</p>
+                )
+            }
+
+            }
+        </Consumer1>     
          </div>)	
 }
 

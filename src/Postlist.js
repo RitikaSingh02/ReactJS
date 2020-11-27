@@ -8,7 +8,8 @@ class Postlist  extends React.Component {
         posts:[],
         };
     }
-
+//componentDidMount() is invoked immediately after a component is mounted (inserted into the tree). Initialization that requires DOM nodes should go here. If you need to load data from a remote endpoint, 
+//this is a good place to instantiate the network request.
     componentDidMount(){
         Axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(response=>{
